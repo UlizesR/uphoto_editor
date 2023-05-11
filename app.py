@@ -1,5 +1,6 @@
 import customtkinter as ctk
 from image_wdigets import *
+from intro_widgets import *
 from PIL import Image, ImageTk, ImageOps, ImageEnhance, ImageFilter
 from menu import Menu
 
@@ -8,11 +9,14 @@ class App(ctk.CTk):
         super().__init__()
         ctk.set_appearance_mode("dark")
         self.geometry('1000x600')
-        self.title('UPhoto Editor')
+        self.title('URPhoto Editor')
         self.minsize(800, 500)
         self.init_parameters()
         self.configure_layout()
 
+
+        LandingFrame(self)
+        LandingMenu(self)
         self.image_import = ImageImport(self, self.import_image)
         self.mainloop()
 
@@ -41,6 +45,7 @@ class App(ctk.CTk):
     def configure_layout(self):
         self.rowconfigure(0, weight=1)
         self.columnconfigure(0, weight=2, uniform='a')
+        self.columnconfigure(1, weight=1, uniform='a')
         self.columnconfigure(1, weight=6, uniform='a')
 
     def manipulate_image(self, *args):
