@@ -16,7 +16,7 @@ class App(ctk.CTk):
 
 
         LandingFrame(self)
-        LandingMenu(self)
+        # LandingMenu(self)
         self.image_import = ImageImport(self, self.import_image)
         self.mainloop()
 

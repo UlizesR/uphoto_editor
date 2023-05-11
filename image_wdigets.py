@@ -10,7 +10,7 @@ class ImageImport(ctk.CTkFrame):
 
         ctk.CTkLabel(self, text='Import Image', font=('Arial', 30)).pack(padx=10, pady=10)
 
-        ctk.CTkButton(self, text='open image', command=self.open_dialog).pack(expand=True, pady=20)
+        ctk.CTkButton(self, fg_color=BLUE, text='open image', command=self.open_dialog).pack(expand=True, pady=20)
 
     def open_dialog(self):
         path = filedialog.askopenfile().name
