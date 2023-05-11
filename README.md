@@ -42,5 +42,7 @@ A simple Photo Editor
 
 ## Things to fix or improve
 
-* zoom (fix & improve)
-* optmize image manipulation (improve)
+* Zoom (fix & improve)
+* Optmize image manipulation (improve)
+* Fix Background when Opening an Image
+* Fix removing Editing Exit button when exiting editing 
